@@ -442,6 +442,22 @@ box-sizing: border-box;
     background: #222222;
     font-size: 9px;
     cursor: pointer;
+    &:before, &:after{
+		content: '';
+		position: absolute;
+		display: block;
+		top:43%;
+		right:10%;
+		width: 80%;
+		border-bottom: 5px solid #fff;
+	}
+
+	&:before{
+		transform: rotate(45deg);
+	}
+	&:after{
+		transform: rotate(-45deg);
+	}
 }
 .fa-close{
 	color:white;
